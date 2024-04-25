@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aevuive Convert Text</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aevuive Convert Text</h1>
+      <div class="text-container">
+        <textarea
+          name="text-input"
+          id="text-input"
+          cols="50"
+          rows="12"
+        ></textarea>
+      </div>
+      <div class="feature">
+        <button class="upper-case-btn">Upper case</button>
+        <button class="lower-case-btn">Lower case</button>
+        <button class="capitalized-case-btn">Capitalized case</button>
+        <div class="tooltip">
+          <button class="copy-btn">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            Copy text
+          </button>
+        </div>
+        <button class="clear-btn">Clear</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
