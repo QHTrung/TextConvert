@@ -4,6 +4,7 @@ const lowerCaseBtn = document.querySelector('.lower-case-btn');
 const capitalizedCaseBtn = document.querySelector('.capitalized-case-btn');
 const copyBtn = document.querySelector('.copy-btn');
 const clearBtn = document.querySelector('.clear-btn');
+const formatBtn = document.querySelector('.format-btn');
 const tooltip = document.getElementById('myTooltip');
 
 function checkEmpty(text) {
@@ -48,4 +49,10 @@ copyBtn.addEventListener('click', () => {
 });
 clearBtn.addEventListener('click', () => {
   textInput.value = '';
+});
+formatBtn.addEventListener('click', () => {
+  textInput.value = textInput.value
+    .replace(/\d{1}:\d{2}/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 });

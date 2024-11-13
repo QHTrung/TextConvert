@@ -51,6 +51,9 @@
 .clear-btn {
   background-color: lightcoral !important;
 }
+.format-btn {
+  background-color: lightseagreen !important;
+}
 .tooltip {
   position: relative;
   display: inline-block;
